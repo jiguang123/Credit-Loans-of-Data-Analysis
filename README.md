@@ -486,16 +486,16 @@ Object”分类变量缺失值概况。
 
 - 欠采样（undersampling），去除一些负样本使得正、负样本数目接近，然后再进行学习。
 
-	# 构建自变量和因变量
+---
+	#构建自变量和因变量
 	X = loans_ml_df[col_new]
-	y = loans_ml_df["loan_status"]
-	
+	y = loans_ml_df["loan_status"]	
 	n_sample = y.shape[0]
 	n_pos_sample = y[y == 0].shape[0]
 	n_neg_sample = y[y == 1].shape[0]
 	print('样本个数：{}; 正样本占{:.2%}; 负样本占{:.2%}'.format(n_sample,
-	                                                   n_pos_sample / n_sample,
-	                                                   n_neg_sample / n_sample))
+		   n_pos_sample / n_sample,
+		   n_neg_sample / n_sample))
 	print('特征维数：', X.shape[1])
 
 
