@@ -531,9 +531,9 @@ Object”分类变量缺失值概况。
 
 查看预测结果的准确率
 
-predicted1 = clf.predict(X) # 通过分类器产生预测结果
-from sklearn.metrics import accuracy_score
-print("Test set accuracy score: {:.5f}".format(accuracy_score(predicted1, y,)))
+    predicted1 = clf.predict(X) # 通过分类器产生预测结果
+    from sklearn.metrics import accuracy_score
+    print("Test set accuracy score: {:.5f}".format(accuracy_score(predicted1, y,)))
 
 ![32](https://pic4.zhimg.com/80/v2-a8cef688f4533fe92c4dcd9c4692e5d4_hd.jpg)
 
